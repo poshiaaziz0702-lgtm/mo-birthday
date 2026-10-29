@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Mo 🤍</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,serif;background:#111;color:#eee}
+body{overflow:hidden;background:radial-gradient(circle at 50% 0,#555,#202020 48%,#0b0b0b)}
+.page{position:fixed;inset:0;display:grid;place-items:center;padding:22px;opacity:0;visibility:hidden;transform:translateY(18px);transition:.7s ease}
+.page.active{opacity:1;visibility:visible;transform:none}.card{width:min(700px,94vw);max-height:92vh;overflow:auto;padding:38px 28px;text-align:center;border:1px solid #666;border-radius:30px;background:#181818dd;box-shadow:0 25px 80px #000}
+.k{letter-spacing:5px;text-transform:uppercase;color:#aaa;font:12px Arial}.name{font-size:clamp(65px,16vw,115px);letter-spacing:9px;margin:8px}.cake{font-size:100px;margin:12px;filter:drop-shadow(0 10px 15px #000)}h1{font-size:clamp(30px,7vw,52px);font-weight:400}.copy{font:16px/1.85 Arial;color:#ddd}.letter{text-align:left;font:15.5px/1.9 Arial;color:#eee}.sign{font-size:21px;font-style:italic;margin-top:25px}button{border:1px solid #aaa;border-radius:99px;padding:13px 24px;margin-top:24px;background:#eee;color:#222;font-size:15px}button:active{transform:scale(.98)}.spark{position:fixed;color:#aaa;opacity:.45;animation:float 7s ease-in-out infinite}.s1{left:8%;top:15%}.s2{right:9%;top:24%;animation-delay:1.5s}.s3{left:13%;bottom:16%;animation-delay:3s}.s4{right:13%;bottom:13%;animation-delay:4.5s}@keyframes float{50%{transform:translateY(-18px) rotate(12deg);opacity:.8}}
+</style></head><body>
+<div class="spark s1">✦</div><div class="spark s2">✧</div><div class="spark s3">♡</div><div class="spark s4">✦</div>
+
+<section class="page active" id="p1"><div class="card"><div class="k">a little something for</div><div class="name">MO</div><div>♡</div><p class="k">from Poshiy</p><button onclick="go(2)">open it ✨</button></div></section>
+
+<section class="page" id="p2"><div class="card"><div class="k">your birthday</div><div class="cake">🎂</div><h1>Make a wish, Mo.</h1><p class="copy">Take a little moment, close your eyes, make your wish, and blow out the candles. ✨</p><button onclick="go(3)">I made my wish 🤍</button></div></section>
+
+<section class="page" id="p3"><div class="card"><div class="k">before your letter</div><h1>A few things I hope for you</h1><p class="copy">I hope this year is gentle with you.<br>I hope you find more reasons to smile, more moments that make you genuinely happy, and people who remind you how much you matter.<br><br>I hope you get everything you’re quietly wishing for — even the things you don't say out loud. And whatever happens, I hope you never forget that you deserve good things. 🤍</p><button onclick="go(4)">read my message →</button></div></section>
+
+<section class="page" id="p4"><div class="card"><div class="k">a birthday message</div><h1>For you, Mo ✨</h1><div class="letter">Happiest birthday to you mo (ig i found a nichname🤧) wish you the best year i’m glad to know you this year, everything became so much better with you in my life thanks for that and yeah so many weird things happened tho but anyways i hope it would be alright by the time i hope we’ll be better we both got mature now, i hope we’ll fix everything one day, i believe something is between us that made it special so yeah whatever thanks for being a good friend wish you the best for the year and remember if anything happens to you hope you know i’m here for you I’ll listen no matter what and i won’t judge don’t worry just don’t keep all to yourself so happy birthday again muahh✨</div><div class="sign">— Poshiy 🤍</div><button onclick="go(5)">one last thing…</button></div></section>
+
+<section class="page" id="p5"><div class="card"><div class="cake">🎂</div><h1>Happy Birthday, Mo 🤍</h1><p class="copy">Thank you for being part of my year.<br>Whatever the future looks like, I hope this birthday becomes one of the memories that makes you smile.</p><div class="sign">— Poshiy ✨</div><button onclick="go(1)">back to the beginning</button></div></section>
+
+<script>function go(n){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+n).classList.add('active')}</script>
+</body></html>
